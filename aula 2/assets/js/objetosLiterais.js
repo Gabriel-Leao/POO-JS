@@ -1,5 +1,31 @@
 console.log("=== OBJETOS LITERAIS ===")
 
+/*
+Conceitos - O que é um objeto?
+        |------------|
+        |   OBJETO   |
+        |------------|
+        /            \ 
+     CARACTS        AÇÕES
+    Def como      Def o que 
+      o obj         o obj
+      é!          é capaz de
+                    fazer!
+        |------------|
+        |   PESSOA   |
+        |------------|
+        /            \ 
+      PROPS        MÉTODOS
+      nome         comer()
+      altura       andar()
+      peso         trabalhar()
+      idade        dormir()
+      profissao    falar()
+      natural      ...
+      nacional
+      ...
+*/
+
 const pessoa = {
     nome: "Gabriel",
     altura: 1.75,

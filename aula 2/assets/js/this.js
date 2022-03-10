@@ -1,5 +1,25 @@
 console.log("=== USO DO THIS ===")
 
+/*
+Conceitos - O que é um objeto?
+        |------------|
+        |   OBJETO   |
+        |------------|
+        /            \ 
+     CARACTS        AÇÕES
+        |-----------|
+        |    CAR    |
+        |-----------|
+       /             \
+    PROPS           MÉTODOS
+    marca           ligar()
+    cor             desligar()
+    ano             acelerar()
+    modelo          freiar()
+    veloMin
+    veloMax
+*/
+
 const uno = {
     marca: "Fiat",
     modelo: "Uno",
