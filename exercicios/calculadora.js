@@ -17,15 +17,20 @@ const calculadora = (function () {
         return dividendo / divisor
     }
 
+    calculadora.potencia = function (base=0, expoente=0) {
+        return Math.pow(base, expoente)
+    }
+
+    calculadora.porcentagem = function (n1=0, n2=0) {
+        return  n2 * (n1 / 100)
+    }
+
     return {
         somar: calculadora.soma,
         subtrair: calculadora.subtracao,
         multiplicar: calculadora.multiplicacao,
-        dividir: calculadora.dividir
+        dividir: calculadora.dividir,
+        potencia: calculadora.potencia,
+        porcentagem: calculadora.porcentagem
     }
 })()
-
-console.log(calculadora.somar(154, 77))
-console.log(calculadora.multiplicar(7, 5))
-console.log(calculadora.subtrair(7, 5))
-console.log(calculadora.dividir(10, 5))
