@@ -21,8 +21,12 @@ const calculadora = (function () {
         return Math.pow(base, expoente)
     }
 
-    calculadora.porcentagem = function (n1=0, n2=0) {
-        return  n2 * (n1 / 100)
+    calculadora.porcentagem = function (porcentagem=0, total=0) {
+        return  total * (porcentagem / 100)
+    }
+
+    calculadora.raizQuadrada = function (radical) {
+        return Math.sqrt(radical)
     }
 
     return {
@@ -31,6 +35,7 @@ const calculadora = (function () {
         multiplicar: calculadora.multiplicacao,
         dividir: calculadora.dividir,
         potencia: calculadora.potencia,
-        porcentagem: calculadora.porcentagem
+        porcentagem: calculadora.porcentagem,
+        raizQuadrada: calculadora.raizQuadrada
     }
 })()
