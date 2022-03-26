@@ -1,4 +1,4 @@
-import { Eletronico } from "./Eletronico";
+import { Eletronico } from "./Eletronico.js";
 
 // classe de herança
 class Televisao extends Eletronico {
@@ -19,6 +19,7 @@ class Televisao extends Eletronico {
         13: "Band"
     }
 
+    // polimorfismo - reescrita do método
     info() {
         return `O seu aparelho ${this.fabricante.nome} está ${(this.estado) ? `ligado e sintonizado na emissora ${Televisao.emissoras[this.emissora]}`: 'desligado'}`
     }

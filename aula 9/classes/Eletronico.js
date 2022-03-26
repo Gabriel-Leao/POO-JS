@@ -49,6 +49,10 @@ class Eletronico {
         if (this.#estado) return this.#volume -= 1
         throw new Error(Eletronico.msg.DIMINUIR_VOLUME_EXCEPT)
     }
+
+    info() {
+        return `O seu aparelho ${this.#fabricante.nome} está ${(this.#estado) ? `ligado e sintonizado na emissora ${this.#emissora}`: 'desligado'}`
+    }
 }
 
 export {Eletronico}
