@@ -7,23 +7,24 @@ const humano = {
     idade: 23,
     peso: 57,
     altura: 1.66,
-    comer: function() {
-        let cal = input('Digite as calorias consumidas: ')
+    comer: function(cal) {
         this.movimentos.push(`Consomiu ${cal} calorias`)
         if (cal >= 7000) {
             return ++this.peso
         } else return this.peso
     },
-    treinar: function() {
-        let gasto = input('Digite as calorias gastadas: ')
+    treinar: function(gasto) {
+        this.movimentos.push(`Gastou ${gasto} calorias`)
         if (gasto >= 7000) {
             return --this.peso
         } else return this.peso
     },
-    movimentos: []
+    movimentos: new Array
 }
 
-humano.comer()
-humano.treinar()
+let cal = input('Digite as calorias consumidas: ')
+humano.comer(cal)
+let gasto = input('Digite as calorias gastadas: ')
+humano.treinar(gasto)
 console.log(`O peso de ${humano.nome} é de ${humano.peso}KG`)
 console.log(humano.movimentos)
