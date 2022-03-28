@@ -37,7 +37,6 @@ class Televisao {
     #ligada
     #fabricante
     #polegadas
-    #canaisAbertos
 
     //props estáticas
     static msg = {
